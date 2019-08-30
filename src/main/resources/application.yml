@@ -1,0 +1,12 @@
+spring:
+   profiles:
+      active: prod #设置为开发环境配置
+   datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/todo?serverTimezone=UTC&characterEncoding=utf-8
+      username: root
+      password: sdh123
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
